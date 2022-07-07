@@ -13,12 +13,14 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
 
+  <!-- Header links-->
     <%= render "shared/headers/links" %>
   </head>
 
   <body>
-  <main class="container">
+
     <%= yield %>
-  </main>
+  <!-- Footer links-->
+    <%= render "shared/footers/links" %>
   </body>
 </html>
